@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jalgre1507-project-app/static/css/main.44ae2826.css",
+    "main.js": "/jalgre1507-project-app/static/js/main.4a3a9f08.js",
+    "static/js/151.ca5a4516.chunk.js": "/jalgre1507-project-app/static/js/151.ca5a4516.chunk.js",
+    "index.html": "/jalgre1507-project-app/index.html",
+    "main.44ae2826.css.map": "/jalgre1507-project-app/static/css/main.44ae2826.css.map",
+    "main.4a3a9f08.js.map": "/jalgre1507-project-app/static/js/main.4a3a9f08.js.map",
+    "151.ca5a4516.chunk.js.map": "/jalgre1507-project-app/static/js/151.ca5a4516.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44ae2826.css",
+    "static/js/main.4a3a9f08.js"
+  ]
+}
