@@ -88,7 +88,7 @@ function FlashcardGallery({ category, onGoBack }) {
       {category === "Math" ? (
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
           <img
-            src="https://img.clipart-library.com/2/clip-math-bookss/clip-math-bookss-5.jpg"
+            src="https://static.vecteezy.com/system/resources/previews/066/107/486/non_2x/math-books-and-tools-vector.jpg"
             alt="Math Illustration"
             style={{ width: "150px", height: "auto", marginRight: "10px" }}
           />
