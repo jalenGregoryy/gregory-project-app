@@ -43,42 +43,37 @@ function Flashcard({ card, inputText, setInputText }) {
 
 function FlashcardGallery({ category, onGoBack }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [count, setCount] = useState(0);
   const [inputText, setInputText] = useState("");
-  const [feedback, setFeedback] = useState(""); // stores correct or incorrect message
+  const [feedback, setFeedback] = useState("");
+  const [isCorrect, setIsCorrect] = useState(false);
 
   const cards = flashcards[category];
 
   const handleNext = () => {
-    if (currentIndex < cards.length - 1) {
+    if (isCorrect && currentIndex < cards.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      setCount(count + 1);
-      setInputText(""); 
+      setInputText("");
       setFeedback("");
+      setIsCorrect(false);
     }
   };
 
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
-      setCount(count - 1);
-      setInputText(""); 
-      setFeedback(""); 
+      setInputText("");
+      setFeedback("");
+      setIsCorrect(false);
     }
   };
 
-  const handleReset = () => {
-    setCurrentIndex(0);
-    setCount(0);
-    setInputText(""); 
-    setFeedback(""); 
-  };
-
   const checkAnswer = () => {
-    if (inputText.toLowerCase() === cards[currentIndex].answer.toLowerCase()) {
-      setFeedback("✅ Correct!");
+    if (inputText.trim().toLowerCase() === cards[currentIndex].answer.toLowerCase()) {
+      setFeedback("Correct!");
+      setIsCorrect(true);
     } else {
-      setFeedback("❌ Incorrect :( Try Again");
+      setFeedback("Incorrect, try again.");
+      setIsCorrect(false);
     }
   };
 
@@ -129,8 +124,6 @@ function FlashcardGallery({ category, onGoBack }) {
         <h1>{category} Flashcards</h1>
       )}
 
-      <h2>Cards Studied: {count}</h2>
-
       {/* Flashcard and Input Section */}
       <Flashcard 
         card={cards[currentIndex]} 
@@ -139,7 +132,7 @@ function FlashcardGallery({ category, onGoBack }) {
       />
 
       <button onClick={checkAnswer} style={{ margin: "10px" }}>Submit Answer</button>
-      <h3>{feedback}</h3> {/* Displays Correct/Incorrect message */}
+      <div>{feedback}</div> {/* Displays Correct/Incorrect message */}
 
       {/* Navigation Buttons */}
       <Button label="Next Card" onClick={handleNext} />
