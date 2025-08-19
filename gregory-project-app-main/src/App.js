@@ -77,6 +77,13 @@ function FlashcardGallery({ category, onGoBack }) {
     }
   };
 
+  const handleReset = () => {
+    setCurrentIndex(0);
+    setInputText("");
+    setFeedback("");
+    setIsCorrect(false);
+  };
+
   return (
     <div style={{ textAlign: "center" }}>
       {/* Category Title with Images */}
