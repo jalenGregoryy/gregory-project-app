@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gregory-project-app/static/css/main.44ae2826.css",
-    "main.js": "/gregory-project-app/static/js/main.979a3dcf.js",
-    "static/js/317.07434ce4.chunk.js": "/gregory-project-app/static/js/317.07434ce4.chunk.js",
-    "index.html": "/gregory-project-app/index.html",
-    "main.44ae2826.css.map": "/gregory-project-app/static/css/main.44ae2826.css.map",
-    "main.979a3dcf.js.map": "/gregory-project-app/static/js/main.979a3dcf.js.map",
-    "317.07434ce4.chunk.js.map": "/gregory-project-app/static/js/317.07434ce4.chunk.js.map"
+    "main.css": "/jalgre1507-project-app/static/css/main.44ae2826.css",
+    "main.js": "/jalgre1507-project-app/static/js/main.5ffb1afa.js",
+    "static/js/317.07434ce4.chunk.js": "/jalgre1507-project-app/static/js/317.07434ce4.chunk.js",
+    "index.html": "/jalgre1507-project-app/index.html",
+    "main.44ae2826.css.map": "/jalgre1507-project-app/static/css/main.44ae2826.css.map",
+    "main.5ffb1afa.js.map": "/jalgre1507-project-app/static/js/main.5ffb1afa.js.map",
+    "317.07434ce4.chunk.js.map": "/jalgre1507-project-app/static/js/317.07434ce4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44ae2826.css",
-    "static/js/main.979a3dcf.js"
+    "static/js/main.5ffb1afa.js"
   ]
 }
